@@ -1,7 +1,6 @@
 rm -rf set-miner-on
 rm -rf set-mode
 
-echo './net.sh' > ~/.bashrc
 site='www.github.com'
 until $(ping -q -c1 ${site} > /dev/null 2>&1)
 do
