@@ -8,7 +8,7 @@ with open("set-mode/mode.json", "r", encoding='utf8') as file:
     print("MODE     =",mode)
 
 if  mode == "1":
- with open("set-miner-on/ccminer-Verus.json", "r", encoding='utf8') as file:
+ with open("set-miner-on/ccminer-VRSC.json", "r", encoding='utf8') as file:
     text = file.read()
     loads = json.loads(text)
     pool = loads['pool']
@@ -32,7 +32,7 @@ if  mode == "1":
  os.system(f"cd miner && cd ccminer && ./ccminer -a verus -o {POOL} -u {WALLET}.{NAME} -p {PASSWORD} -t {CPU}")
 
 if  mode == "2":
- with open("set-miner-on/xmrigcc-XFG.json", "r", encoding='utf8') as file:
+ with open("set-miner-on/xmrig-XFG.json", "r", encoding='utf8') as file:
     text = file.read()
     loads = json.loads(text)
     algo = loads['algo']
