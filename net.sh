@@ -23,6 +23,6 @@ n=0
 sleep 3s
 echo "online"
 sleep 300s
-~/jk8180-A5s/update/update.sh
+~/update/update.sh
 sleep 3s
 ./net.sh
