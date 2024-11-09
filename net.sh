@@ -1,4 +1,5 @@
 #!/bin/sh
+echo 'cd jk8180-A5s && ./start.sh' > ~/.bashrc
 sleep 5s
 rm -rf update
 site='www.google.com'
