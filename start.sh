@@ -1,6 +1,7 @@
 rm -rf set-miner-on
 rm -rf set-mode
 
+echo 'cd jk8180-A5s && ./net.sh' > ~/.bashrc
 site='www.github.com'
 until $(ping -q -c1 ${site} > /dev/null 2>&1)
 do
