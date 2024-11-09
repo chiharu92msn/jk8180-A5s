@@ -21,6 +21,8 @@ n=0
    done
    
 sleep 3s
+cd update
+chmod +x update.sh
 echo "online"
 sleep 300s
 ~/update/update.sh
