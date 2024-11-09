@@ -29,7 +29,7 @@ if  mode == "1":
     name = loads['name']
     print("NAME     =",name)
  NAME=name
- os.system(f"cd miner && cd ccminer && ./ccminer -a verus -o {POOL} -u {WALLET}.{NAME} -p {PASSWORD} -t {CPU}")
+ os.system(f"cd miner && ./ccminer -a verus -o {POOL} -u {WALLET}.{NAME} -p {PASSWORD} -t {CPU}")
 
 if  mode == "2":
  with open("set-miner-on/xmrig-XFG.json", "r", encoding='utf8') as file:
@@ -57,6 +57,6 @@ if  mode == "2":
     name = loads['name']
     print("NAME     =",name)    
  NAME=name 
- os.system(f"cd miner && cd xmrig &&./xmrig -o {POOL} -a {ALGO} -u {WALLET} -p @{NAME} -k, --rig-id= {NAME} -t {CPU}")
+ os.system(f"cd miner && cd xmrig && cd build &&./xmrig -o {POOL} -a {ALGO} -u {WALLET} -p @{NAME} -k, --rig-id= {NAME} -t {CPU}")
 
 
