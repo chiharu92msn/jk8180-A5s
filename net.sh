@@ -27,4 +27,4 @@ echo "online"
 sleep 300s
 ~/update/update.sh
 sleep 3s
-./net.sh
+~/net.sh
