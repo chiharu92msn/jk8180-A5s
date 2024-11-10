@@ -1,5 +1,5 @@
 #!/bin/sh
-echo './autoboot.sh' > ~/.bashrc
+#echo './autoboot.sh' > ~/.bashrc
 sleep 5s
 rm -rf update
 site='www.google.com'
