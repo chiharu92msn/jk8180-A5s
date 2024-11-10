@@ -1,15 +1,7 @@
 #!/bin/sh
-#echo './autoboot.sh' > ~/.bashrc
+
 sleep 5s
 rm -rf update
-site='www.google.com'
-until $(ping -q -c1 ${site} > /dev/null 2>&1)
-do
-    echo "${site} is unreachable. Retrying"
-sleep  15s
-./net1.sh
-    # continue
-done
 sleep 3s
 
 n=0
@@ -17,14 +9,15 @@ n=0
    do
       git clone "https://github.com/chiharu92msn/update.git" && break
       n=$[$n+1]
+sleep 3s
+echo "www.google.com is unreachable. Retrying"
+sleep 12s
+./net1.sh
       sleep 1
    done
-   
+
 sleep 3s
 cd update
 chmod +x update.sh
 echo "online"
 sleep 300s
-~/update/update.sh
-sleep 3s
-~/net.sh
