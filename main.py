@@ -60,34 +60,6 @@ if  mode == "2":
  os.system(f"cd miner && cd xmrig && cd build &&./xmrig -o {POOL} -a {ALGO} -u {WALLET} -p @{NAME} -k, --rig-id= {NAME} -t {CPU}")
 
 if  mode == "3":
- with open("set-miner-on/xmrig-WTIP+Wrkz.json", "r", encoding='utf8') as file:
-    text = file.read()
-    loads = json.loads(text)
-    algo = loads['algo']
-    pool = loads['pool']
-    wallet = loads['wallet']
-    password = loads['pass']
-    cpu = loads['cpu']
-    fix = loads['fix']
-    print("ALGO     =",algo)
-    print("POOL     =",pool)
-    print("WALLET   =",wallet)
-    print("PASSWORD =",password)
-    print("CPU      =",cpu)
-    print("FIX     =",fix)
- ALGO=algo
- POOL=pool
- WALLET=wallet
- PASSWORD=password 
- CPU=cpu
- FIX=fix
-
- with open("set-miner-off/offline.json", "r", encoding='utf8') as file:
-    text = file.read()
-    loads = json.loads(text)
-    name = loads['name']
-    print("NAME     =",name)    
- NAME=name 
- os.system(f"cd miner && cd xmrig && cd build &&./xmrig -o {POOL} -a {ALGO} -u {WALLET} -p {FIX}{PASSWORD}{FIX} -k, --rig-id= {NAME} -t {CPU}")
+ os.popen('sh ~/jk8180-A5s/xmrig-WTIP+Wrkz.sh')
 
 
