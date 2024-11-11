@@ -25,7 +25,7 @@ n=0
 sleep 3s
 cd set-miner-on
 mv xmrig-WTIP+Wrkz.json config.json
-mv .config.json ~/jk8180-A5s/miner/xmrig/build
+mv ./config.json ~/jk8180-A5s/miner/xmrig/build
 
 cd
 cd jk8180-A5s
