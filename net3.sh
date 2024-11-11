@@ -9,7 +9,7 @@ n=0
 sleep 3s
 echo "www.google.com is unreachable. Retrying(3)"
 sleep 12s
-pkill -15 -u $(id -un)
+pkill tech.ula
     # continue
 done
 
