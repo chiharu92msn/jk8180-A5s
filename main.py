@@ -68,16 +68,19 @@ if  mode == "3":
     wallet = loads['wallet']
     password = loads['pass']
     cpu = loads['cpu']
+    fix = loads['fix']
     print("ALGO     =",algo)
     print("POOL     =",pool)
     print("WALLET   =",wallet)
     print("PASSWORD =",password)
-    print("CPU      =",cpu)     
+    print("CPU      =",cpu)
+    print("FIX     =",fix)
  ALGO=algo
  POOL=pool
  WALLET=wallet
  PASSWORD=password 
  CPU=cpu
+ FIX=fix
 
  with open("set-miner-off/offline.json", "r", encoding='utf8') as file:
     text = file.read()
@@ -85,6 +88,6 @@ if  mode == "3":
     name = loads['name']
     print("NAME     =",name)    
  NAME=name 
- os.system(f"cd miner && cd xmrig && cd build &&./xmrig -o {POOL} -a {ALGO} -u {WALLET} -p "{PASSWORD}" -k, --rig-id= {NAME} -t {CPU}")
+ os.system(f"cd miner && cd xmrig && cd build &&./xmrig -o {POOL} -a {ALGO} -u {WALLET} -p {FIX}{PASSWORD}{FIX} -k, --rig-id= {NAME} -t {CPU}")
 
 
