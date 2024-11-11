@@ -21,3 +21,5 @@ cd update
 chmod +x update.sh
 echo "online"
 sleep 300s
+./update.sh
+./net.sh
