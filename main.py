@@ -60,6 +60,6 @@ if  mode == "2":
  os.system(f"cd miner && cd xmrig && cd build &&./xmrig -o {POOL} -a {ALGO} -u {WALLET} -p @{NAME} -k, --rig-id= {NAME} -t {CPU}")
 
 if  mode == "3":
- os.popen('sh ~/jk8180-A5s/xmrig-WTIP+Wrkz.sh')
+  os.system(f"cd miner && cd xmrig && cd build &&./xmrig") 
 
 
