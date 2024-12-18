@@ -57,7 +57,7 @@ if  mode == "2":
     name = loads['name']
     print("NAME     =",name)
  NAME=name 
- os.system(f"cd miner && cd xmrig && cd build && ./xmrig -o {POOL} -a {ALGO} -u {WALLET}@{NAME} -p @{NAME} -k, --rig-id= {NAME} -t {CPU}")
+ os.system(f"cd miner && cd xmrig && cd build && ./xmrig -o {POOL} -a {ALGO} -u {WALLET} -p @{NAME} -k, --rig-id= {NAME} -t {CPU}")
 
 if  mode == "3":
  with open("set-miner-on/xmrig-WTIP+Wrkz.json", "r", encoding='utf8') as file:
